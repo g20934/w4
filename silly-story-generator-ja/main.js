@@ -1,4 +1,4 @@
-const customName = document.getElementById('customname');//HTMLから値をとってくる
+const customName = document.getElementById('customname');//HTMLから値をとってくる ここではid = customname にマッチするドキュメント要素を取得
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
 
