@@ -1,5 +1,5 @@
 const customName = document.getElementById('customname');//HTMLから値をとってくる ここではid = customname にマッチするドキュメント要素を取得
-const randomize = document.querySelector('.randomize');
+const randomize = document.querySelector('.randomize');//document は 組み込みのオブジェクト。ブラウザが表示しているページ。DOM とも呼ぶ。 Document Object Modelの略。
 const story = document.querySelector('.story');
 
 function randomValueFromArray(array){//配列からランダムに一個選ぶ関数
