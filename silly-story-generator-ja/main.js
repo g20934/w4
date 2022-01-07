@@ -1,10 +1,10 @@
 const customName = document.getElementById('customname');//HTMLから値をとってくる ここではid = customname にマッチするドキュメント要素を取得
 const randomize = document.querySelector('.randomize');//document は 組み込みのオブジェクト。ブラウザが表示しているページ。DOM とも呼ぶ。 Document Object Modelの略。
-const story = document.querySelector('.story');
+const story = document.querySelector('.story');//querySelectorはクラスでもIDでも、要素そのものでも指定可能.
 
 function randomValueFromArray(array){//配列からランダムに一個選ぶ関数
-  const random = Math.floor(Math.random()*array.length);
-  return array[random];
+  const random = Math.floor(Math.random()*array.length);//おそらくこの行から、引数に入ってくる配列の長さは要素数3以外でもOKだと思う
+  return array[random];//選んだ要素を返す
 }
 
 //バカ話
@@ -29,6 +29,7 @@ function result() {
   const timeItem = randomValueFromArray(insertTime);
 
   //文字列置換
+  //newStory.replaceは1回呼び出しただけでは全ての:insertx:を変えてくれる訳ではなかったので、:insertx:を使っている分newStory.replace(':insertx:',xItem)を書いた
   newStory = newStory.replace(':insertx:',xItem);//newStoryの中の:insertx:という文字列をxItem（23行目）で置き換える
   newStory = newStory.replace(':insertx:',xItem);//replaceは文字列型オブジェクトに使えるメソッド（関数）　文字列置換
   newStory = newStory.replace(':insertx:',xItem);
@@ -40,13 +41,13 @@ function result() {
   newStory = newStory.replace(':insertw:',wItem);
   newStory = newStory.replace(':insertTime:',timeItem);
   
-  //名前はユーザーが入力したものに置換(もし入力が空文字列でなかったら名前をユーザーが入力したものにする）
+  //名前はユーザーが入力したものに置換.もし入力が空文字列でなかったら名前をユーザーが入力したものにする.空文字列なら何もしない（花子のまま）
   if (customName.value !== '') {
     const name = customName.value;
     newStory = newStory.replace('花子', name);
   }
 
-  //体重や気温を計算して置換
+  //体重や気温を計算して置換（日本が選択されたとき）
   if (document.getElementById("jp").checked) {
     const weight = `${Math.round(23*0.0714286)} kg`;
     const temperature =  `摂氏${Math.round((14-32) * 5 / 9)}`;
