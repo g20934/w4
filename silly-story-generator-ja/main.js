@@ -31,7 +31,11 @@ function result() {
   //文字列置換
   newStory = newStory.replace(':insertx:',xItem);//newStoryの中の:insertx:という文字列をxItem（23行目）で置き換える
   newStory = newStory.replace(':insertx:',xItem);//replaceは文字列型オブジェクトに使えるメソッド（関数）　文字列置換
+  newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':inserty:',yItem);
+  newStory = newStory.replace(':inserty:',yItem);
+  newStory = newStory.replace(':inserty:',yItem);
+  newStory = newStory.replace(':insertz:',zItem);
   newStory = newStory.replace(':insertz:',zItem);
   newStory = newStory.replace(':insertw:',wItem);
   newStory = newStory.replace(':insertTime:',timeItem);
