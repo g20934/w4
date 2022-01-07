@@ -8,7 +8,7 @@ function randomValueFromArray(array){//配列からランダムに一個選ぶ�
 }
 
 //バカ話
-const storyText = 'ある日、気温華氏14度で外は寒かったが、花子は:inserty:に行きたいと思った。外に出ると、外には:insertw:。:inserty:に着くと、:insertz:。花子は:insertz:に対して驚いたので、:insertx:と会い、話をした。:insertx:は「:inserty:ではよくあることだよ。」と話していた。花子は:insertx:が体重23ポンドということを初めて知ったので驚いた。:insertTime:になったので、花子は家に戻り、今日あった出来事を日記に書いた。';
+const storyText = 'ある日、気温華氏14度で外は寒かったが、花子は:inserty:に行きたいと思った。外に出ると、外には:insertw:。:inserty:に着くと、:insertz:。花子は:insertz:ことに対して驚いたので、:insertx:と会い、話をした。:insertx:は「:inserty:ではよくあることだよ。」と話していた。花子は:insertx:が体重23ポンドということを初めて知ったので驚いた。:insertTime:になったので、花子は家に戻り、今日あった出来事を日記に書いた。';
 const insertX = ['アンパンマン', 'キティ', 'おさるのジョージ'];//要素数3, 要素が文字列の配列
 const insertY = ['アンパンマンミュージアム', 'サンリオピューロランド', 'ユニバーサルスタジオジャパン'];
 const insertZ =['どのアトラクションも1時間以上待たなければならなかった', 'ガラガラで空いていた', '豪雨になっていた'];
