@@ -45,6 +45,9 @@ function result() {
   if (customName.value !== '') {
     const name = customName.value;
     newStory = newStory.replace('花子', name);
+    newStory = newStory.replace('花子', name);
+    newStory = newStory.replace('花子', name);
+    newStory = newStory.replace('花子', name);
   }
 
   //体重や気温を計算して置換（日本が選択されたとき）
