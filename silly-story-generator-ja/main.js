@@ -52,7 +52,7 @@ function result() {
 
   //体重や気温を計算して置換（日本が選択されたとき）
   if (document.getElementById("jp").checked) {
-    const weight = `${Math.round(23*0.0714286)} kg`;
+    const weight = `${Math.round(23 / 2.2046)} kg`;//Math.roundは引数として与えた数を四捨五入する
     const temperature =  `摂氏${Math.round((14-32) * 5 / 9)}`;
     newStory = newStory.replace('華氏14', temperature);
     newStory = newStory.replace('23ポンド', weight);
