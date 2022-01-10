@@ -58,7 +58,7 @@ function result() {
     newStory = newStory.replace('23ポンド', weight);
   }
   
-  //story要素のtextContentを書き換える
+  //story要素のtextContentを書き換えて、見えるようにする
   story.textContent = newStory;
   story.style.visibility = 'visible';
 }
