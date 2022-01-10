@@ -42,7 +42,7 @@ function result() {
   newStory = newStory.replace(':insertTime:',timeItem);
   
   //名前はユーザーが入力したものに置換.もし入力が空文字列でなかったら名前をユーザーが入力したものにする.空文字列なら何もしない（花子のまま）
-  if (customName.value !== '') {
+  if (customName.value !== '') {//JavaScriptでは!==でJavaの!=と同じような比較を行う
     const name = customName.value;
     newStory = newStory.replace('花子', name);
     newStory = newStory.replace('花子', name);
